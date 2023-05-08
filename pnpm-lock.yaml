@@ -1,19 +1,18 @@
 lockfileVersion: 5.4
 
 specifiers:
-  prettier: 3.0.0-alpha.7-for-vscode
+  prettier: ^2.8.4
   typescript: ^5.0.4
 
 devDependencies:
-  prettier: 3.0.0-alpha.7-for-vscode
+  prettier: 2.8.8
   typescript: 5.0.4
 
 packages:
 
-  /prettier/3.0.0-alpha.7-for-vscode:
-    resolution: {integrity: sha512-z4XpacIqSq2DUxHK0lR6HhNqG4Ml8ExghDyuNVnBdR5yToxWinyOOsuxAN/x7b+ltfUPm5gtRfecedR0zjzbbA==}
-    engines: {node: '>=14'}
-    deprecated: this version is accidentally published
+  /prettier/2.8.8:
+    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
+    engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
 
