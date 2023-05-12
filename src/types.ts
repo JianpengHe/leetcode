@@ -17,3 +17,21 @@ export class TreeNode {
     this.right = right === undefined ? null : right;
   }
 }
+
+export const arrayToListNode = (arr: number[]): ListNode | null => {
+  if (!arr.length) {
+    return null;
+  }
+  const o = new ListNode(arr.shift());
+  let now = o;
+  for (const val of arr) {
+    now = now.next = new ListNode(val, null);
+  }
+  return o;
+};
+
+export const ListNodeToArray = (node: ListNode | null, taget: number[] = []) => {
+  if (!node) return taget;
+  taget.push(node.val);
+  return ListNodeToArray(node.next, taget);
+};

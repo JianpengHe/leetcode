@@ -20,7 +20,7 @@
     // "declaration": true,
     "lib": [
       // 要那些 lib，按需选择即可
-      "ESNext"
+      "ESNext","DOM"
     ],
     // "noUnusedLocals": true,
     // "noUnusedParameters": true,
