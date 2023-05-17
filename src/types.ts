@@ -35,3 +35,17 @@ export const ListNodeToArray = (node: ListNode | null, taget: number[] = []) => 
   taget.push(node.val);
   return ListNodeToArray(node.next, taget);
 };
+
+export const delListNode = (node: ListNode) => {
+  // console.log("st", ListNodeToArray(head));
+  const deletedNode = node.next;
+  node.next = node.next?.next || null;
+  // console.log("en", ListNodeToArray(head));
+  return deletedNode;
+};
+export const addListNode = (node: ListNode, newNode: ListNode) => {
+  const next = node.next;
+  node.next = newNode;
+  newNode.next = next;
+  return node;
+};
